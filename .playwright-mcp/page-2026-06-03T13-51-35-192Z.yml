@@ -1,0 +1,1101 @@
+- generic [active] [ref=e1]:
+  - complementary [ref=e2]:
+    - generic [ref=e4]: K
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - button "Flours & Millets" [ref=e8] [cursor=pointer]:
+          - img [ref=e9]
+        - generic: Flours & Millets
+      - generic [ref=e18]:
+        - button "Cold-Pressed Oils" [ref=e19] [cursor=pointer]:
+          - img [ref=e20]
+        - generic: Cold-Pressed Oils
+      - generic [ref=e23]:
+        - button "Pulses & Dals" [ref=e24] [cursor=pointer]:
+          - img [ref=e25]
+        - generic: Pulses & Dals
+      - generic [ref=e29]:
+        - button "Spices & Masalas" [ref=e30] [cursor=pointer]:
+          - img [ref=e31]
+        - generic: Spices & Masalas
+      - generic [ref=e33]:
+        - button "Ghee" [ref=e34] [cursor=pointer]:
+          - img [ref=e35]
+        - generic: Ghee
+      - generic [ref=e39]:
+        - button "Jaggery" [ref=e40] [cursor=pointer]:
+          - img [ref=e41]
+        - generic: Jaggery
+      - generic [ref=e43]:
+        - button "Honey" [ref=e44] [cursor=pointer]:
+          - img [ref=e45]
+        - generic: Honey
+      - generic [ref=e47]:
+        - button "Traditional Grains" [ref=e48] [cursor=pointer]:
+          - img [ref=e49]
+        - generic: Traditional Grains
+  - generic [ref=e52]:
+    - banner [ref=e53]:
+      - generic [ref=e55]:
+        - generic [ref=e57]: Free delivery in Bengaluru on orders over ₹999 · Cold-pressed & milled fresh weekly · FSSAI certified | India Organic · Free delivery in Bengaluru on orders over ₹999 · Cold-pressed & milled fresh weekly · FSSAI certified | India Organic · Free delivery in Bengaluru on orders over ₹999 · Cold-pressed & milled fresh weekly · FSSAI certified | India Organic · Free delivery in Bengaluru on orders over ₹999 · Cold-pressed & milled fresh weekly · FSSAI certified | India Organic ·
+        - generic [ref=e58]:
+          - link "+91-XXXXXXXXXX" [ref=e59] [cursor=pointer]:
+            - /url: tel:+91XXXXXXXXXX
+            - img [ref=e60]
+            - text: +91-XXXXXXXXXX
+          - link "Talk to us" [ref=e62] [cursor=pointer]:
+            - /url: https://wa.me/91XXXXXXXXXX
+            - img [ref=e63]
+            - text: Talk to us
+      - generic [ref=e66]:
+        - link "K Krish Royal. Organics" [ref=e67] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e69]: K
+          - generic [ref=e70]:
+            - generic [ref=e71]: Krish Royal.
+            - generic [ref=e72]: Organics
+        - generic [ref=e73]:
+          - textbox "Search for ragi flour, ghee, oils…" [ref=e74]
+          - button [ref=e75] [cursor=pointer]:
+            - img [ref=e76]
+        - generic [ref=e79]:
+          - button "My account" [ref=e80] [cursor=pointer]:
+            - img [ref=e81]
+          - button "Wishlist" [ref=e84] [cursor=pointer]:
+            - img [ref=e85]
+          - button "Cart" [ref=e87] [cursor=pointer]:
+            - img [ref=e88]
+            - generic [ref=e91]: "0"
+      - generic [ref=e93]:
+        - navigation [ref=e94]:
+          - link "Home" [ref=e95] [cursor=pointer]:
+            - /url: /
+          - link "Shop" [ref=e96] [cursor=pointer]:
+            - /url: /shop
+          - link "KRO Kitchen" [ref=e97] [cursor=pointer]:
+            - /url: /kro-kitchen
+          - link "Our Farms" [ref=e98] [cursor=pointer]:
+            - /url: /our-farms
+          - link "Certifications" [ref=e99] [cursor=pointer]:
+            - /url: /certifications
+          - link "About" [ref=e100] [cursor=pointer]:
+            - /url: /about
+          - link "Contact" [ref=e101] [cursor=pointer]:
+            - /url: /contact
+        - generic [ref=e102]:
+          - img [ref=e103]
+          - text: Same-day Bengaluru delivery available
+    - main [ref=e106]:
+      - generic [ref=e107]:
+        - generic [ref=e108]:
+          - generic [ref=e109]:
+            - generic [ref=e111]:
+              - generic [ref=e112]: From Our Farms to Your Kitchen
+              - heading "Royal organics, the way Karnataka has always grown them." [level=1] [ref=e113]
+              - paragraph [ref=e114]: Stone-milled, cold-pressed, and packed fresh — straight from farmer clusters to your door. No middlemen.
+              - generic [ref=e115]:
+                - link "Shop Now" [ref=e116] [cursor=pointer]:
+                  - /url: /shop
+                  - text: Shop Now
+                  - img [ref=e117]
+                - link "Our Farms" [ref=e119] [cursor=pointer]:
+                  - /url: /our-farms
+            - generic:
+              - img
+            - paragraph [ref=e120]: "* Milled fresh weekly. Order by Wednesday for delivery before the weekend."
+            - generic [ref=e121]:
+              - button "Slide 1" [ref=e122] [cursor=pointer]
+              - button "Slide 2" [ref=e123] [cursor=pointer]
+              - button "Slide 3" [ref=e124] [cursor=pointer]
+          - generic [ref=e125]:
+            - generic [ref=e126]:
+              - generic [ref=e127]: Save up to 35% on
+              - heading "Cold-Pressed Oils" [level=2] [ref=e128]
+              - paragraph [ref=e129]: Wood-pressed, no heat, no chemicals. The old way is the best way.
+              - link "Shop Oils →" [ref=e130] [cursor=pointer]:
+                - /url: "#oils"
+            - img [ref=e133]:
+              - generic [ref=e139]: COLD
+              - generic [ref=e140]: PRESSED
+          - generic [ref=e143]:
+            - generic [ref=e144]:
+              - generic [ref=e145]: Get discount -15% on
+              - heading "A2 Bilona Ghee" [level=2] [ref=e146]
+              - paragraph [ref=e147]: Hand-churned from A2 cow milk. The aroma tells the story.
+              - link "Shop Ghee →" [ref=e148] [cursor=pointer]:
+                - /url: "#ghee-honey"
+            - img [ref=e151]:
+              - generic [ref=e160]: "-15%"
+              - generic [ref=e161]: "OFF"
+        - generic [ref=e163]:
+          - generic [ref=e164]:
+            - img [ref=e166]
+            - generic [ref=e171]:
+              - generic [ref=e172]: Free Bengaluru delivery
+              - generic [ref=e173]: Orders above ₹999
+          - generic [ref=e174]:
+            - img [ref=e176]
+            - generic [ref=e185]:
+              - generic [ref=e186]: Cold-pressed & milled fresh
+              - generic [ref=e187]: Weekly batches
+          - generic [ref=e188]:
+            - img [ref=e190]
+            - generic [ref=e192]:
+              - generic [ref=e193]: FSSAI + India Organic certified
+              - generic [ref=e194]: Lab-tested every batch
+          - generic [ref=e195]:
+            - img [ref=e197]
+            - generic [ref=e199]:
+              - generic [ref=e200]: COD, UPI & cards accepted
+              - generic [ref=e201]: Pay your way
+          - generic [ref=e202]:
+            - img [ref=e204]
+            - generic [ref=e206]:
+              - generic [ref=e207]: WhatsApp support
+              - generic [ref=e208]: Chat us anytime
+        - generic [ref=e209]:
+          - generic [ref=e210]:
+            - heading "Shop by Category" [level=2] [ref=e211]
+            - link "All Categories" [ref=e212] [cursor=pointer]:
+              - /url: /shop
+          - generic [ref=e213]:
+            - generic [ref=e214] [cursor=pointer]:
+              - img [ref=e217]
+              - generic [ref=e223]:
+                - heading "Flours & Millets" [level=3] [ref=e224]
+                - list [ref=e225]:
+                  - listitem [ref=e226]:
+                    - link "Ragi Flour" [ref=e227]:
+                      - /url: "#"
+                  - listitem [ref=e228]:
+                    - link "Jowar Flour" [ref=e229]:
+                      - /url: "#"
+                  - listitem [ref=e230]:
+                    - link "Bajra Flour" [ref=e231]:
+                      - /url: "#"
+                  - listitem [ref=e232]:
+                    - link "Whole Wheat Atta" [ref=e233]:
+                      - /url: "#"
+                  - listitem [ref=e234]:
+                    - link "Multi-grain" [ref=e235]:
+                      - /url: "#"
+                  - listitem [ref=e236]:
+                    - link "Foxtail Millet" [ref=e237]:
+                      - /url: "#"
+            - generic [ref=e238] [cursor=pointer]:
+              - img [ref=e241]
+              - generic [ref=e248]:
+                - heading "Cold-Pressed Oils" [level=3] [ref=e249]
+                - list [ref=e250]:
+                  - listitem [ref=e251]:
+                    - link "Groundnut Oil" [ref=e252]:
+                      - /url: "#"
+                  - listitem [ref=e253]:
+                    - link "Sesame Oil" [ref=e254]:
+                      - /url: "#"
+                  - listitem [ref=e255]:
+                    - link "Coconut Oil" [ref=e256]:
+                      - /url: "#"
+                  - listitem [ref=e257]:
+                    - link "Mustard Oil" [ref=e258]:
+                      - /url: "#"
+            - generic [ref=e259] [cursor=pointer]:
+              - img [ref=e262]
+              - generic [ref=e271]:
+                - heading "Pulses & Dals" [level=3] [ref=e272]
+                - list [ref=e273]:
+                  - listitem [ref=e274]:
+                    - link "Toor Dal" [ref=e275]:
+                      - /url: "#"
+                  - listitem [ref=e276]:
+                    - link "Moong Dal" [ref=e277]:
+                      - /url: "#"
+                  - listitem [ref=e278]:
+                    - link "Chana Dal" [ref=e279]:
+                      - /url: "#"
+                  - listitem [ref=e280]:
+                    - link "Rajma" [ref=e281]:
+                      - /url: "#"
+                  - listitem [ref=e282]:
+                    - link "Black Gram" [ref=e283]:
+                      - /url: "#"
+            - generic [ref=e284] [cursor=pointer]:
+              - img [ref=e287]:
+                - generic [ref=e292]: SPICE
+              - generic [ref=e293]:
+                - heading "Spices & Masalas" [level=3] [ref=e294]
+                - list [ref=e295]:
+                  - listitem [ref=e296]:
+                    - link "Turmeric" [ref=e297]:
+                      - /url: "#"
+                  - listitem [ref=e298]:
+                    - link "Red Chilli" [ref=e299]:
+                      - /url: "#"
+                  - listitem [ref=e300]:
+                    - link "Coriander" [ref=e301]:
+                      - /url: "#"
+                  - listitem [ref=e302]:
+                    - link "Garam Masala" [ref=e303]:
+                      - /url: "#"
+                  - listitem [ref=e304]:
+                    - link "Cumin" [ref=e305]:
+                      - /url: "#"
+            - generic [ref=e306] [cursor=pointer]:
+              - img [ref=e309]
+              - generic [ref=e316]:
+                - heading "Ghee" [level=3] [ref=e317]
+                - list [ref=e318]:
+                  - listitem [ref=e319]:
+                    - link "A2 Cow Ghee" [ref=e320]:
+                      - /url: "#"
+                  - listitem [ref=e321]:
+                    - link "A2 Bilona Ghee" [ref=e322]:
+                      - /url: "#"
+                  - listitem [ref=e323]:
+                    - link "Buffalo Ghee" [ref=e324]:
+                      - /url: "#"
+            - generic [ref=e325] [cursor=pointer]:
+              - img [ref=e328]
+              - generic [ref=e334]:
+                - heading "Jaggery" [level=3] [ref=e335]
+                - list [ref=e336]:
+                  - listitem [ref=e337]:
+                    - link "Sugarcane Jaggery" [ref=e338]:
+                      - /url: "#"
+                  - listitem [ref=e339]:
+                    - link "Palm Jaggery" [ref=e340]:
+                      - /url: "#"
+                  - listitem [ref=e341]:
+                    - link "Coconut Jaggery" [ref=e342]:
+                      - /url: "#"
+                  - listitem [ref=e343]:
+                    - link "Powdered" [ref=e344]:
+                      - /url: "#"
+            - generic [ref=e345] [cursor=pointer]:
+              - img [ref=e348]
+              - generic [ref=e355]:
+                - heading "Honey" [level=3] [ref=e356]
+                - list [ref=e357]:
+                  - listitem [ref=e358]:
+                    - link "Wild Forest Honey" [ref=e359]:
+                      - /url: "#"
+                  - listitem [ref=e360]:
+                    - link "Multi-floral Honey" [ref=e361]:
+                      - /url: "#"
+                  - listitem [ref=e362]:
+                    - link "Single-origin" [ref=e363]:
+                      - /url: "#"
+            - generic [ref=e364] [cursor=pointer]:
+              - img [ref=e367]
+              - generic [ref=e375]:
+                - heading "Traditional Grains" [level=3] [ref=e376]
+                - list [ref=e377]:
+                  - listitem [ref=e378]:
+                    - link "Brown Rice" [ref=e379]:
+                      - /url: "#"
+                  - listitem [ref=e380]:
+                    - link "Red Rice" [ref=e381]:
+                      - /url: "#"
+                  - listitem [ref=e382]:
+                    - link "Foxtail Millet" [ref=e383]:
+                      - /url: "#"
+                  - listitem [ref=e384]:
+                    - link "Quinoa" [ref=e385]:
+                      - /url: "#"
+        - generic [ref=e386]:
+          - generic [ref=e387]:
+            - heading "Bestsellers" [level=2] [ref=e388]
+            - link "All Products" [ref=e389] [cursor=pointer]:
+              - /url: "#"
+          - generic [ref=e390]:
+            - generic [ref=e391]:
+              - generic [ref=e393]: "-18%"
+              - button "Add to wishlist" [ref=e394] [cursor=pointer]:
+                - img [ref=e395]
+              - img [ref=e399]:
+                - generic [ref=e406]: 1 kg
+              - generic [ref=e407]: Flours & Millets
+              - heading "Ragi Flour" [level=3] [ref=e408] [cursor=pointer]
+              - generic [ref=e409]:
+                - img [ref=e410]
+                - generic [ref=e412]: "4.8"
+              - generic [ref=e413]:
+                - generic [ref=e414]:
+                  - generic [ref=e415]: ₹185
+                  - generic [ref=e416]: ₹225
+                - button "Add to cart" [ref=e417] [cursor=pointer]:
+                  - img [ref=e418]
+            - generic [ref=e422]:
+              - generic [ref=e424]: HOT
+              - button "Add to wishlist" [ref=e425] [cursor=pointer]:
+                - img [ref=e426]
+              - img [ref=e430]:
+                - generic [ref=e439]: A2 BILONA
+                - generic [ref=e440]: GHEE
+              - generic [ref=e441]: Ghee
+              - heading "A2 Bilona Ghee" [level=3] [ref=e442] [cursor=pointer]
+              - generic [ref=e443]:
+                - img [ref=e444]
+                - generic [ref=e446]: "4.9"
+              - generic [ref=e447]:
+                - generic [ref=e449]: ₹649
+                - button "Add to cart" [ref=e450] [cursor=pointer]:
+                  - img [ref=e451]
+            - generic [ref=e455]:
+              - generic [ref=e457]: "-15%"
+              - button "Add to wishlist" [ref=e458] [cursor=pointer]:
+                - img [ref=e459]
+              - img [ref=e463]:
+                - generic [ref=e469]: COLD
+                - generic [ref=e470]: PRESSED
+              - generic [ref=e473]: Cold-Pressed Oils
+              - heading "Cold-Pressed Groundnut Oil" [level=3] [ref=e474] [cursor=pointer]
+              - generic [ref=e475]:
+                - img [ref=e476]
+                - generic [ref=e478]: "4.7"
+              - generic [ref=e479]:
+                - generic [ref=e480]:
+                  - generic [ref=e481]: ₹380
+                  - generic [ref=e482]: ₹445
+                - button "Add to cart" [ref=e483] [cursor=pointer]:
+                  - img [ref=e484]
+            - generic [ref=e488]:
+              - generic [ref=e490]: NEW
+              - button "Add to wishlist" [ref=e491] [cursor=pointer]:
+                - img [ref=e492]
+              - img [ref=e496]:
+                - generic [ref=e503]: HONEY
+              - generic [ref=e505]: Honey
+              - heading "Wild Forest Honey" [level=3] [ref=e506] [cursor=pointer]
+              - generic [ref=e507]:
+                - img [ref=e508]
+                - generic [ref=e510]: "4.9"
+              - generic [ref=e511]:
+                - generic [ref=e513]: ₹325
+                - button "Add to cart" [ref=e514] [cursor=pointer]:
+                  - img [ref=e515]
+            - generic [ref=e519]:
+              - generic [ref=e521]: "-15%"
+              - button "Add to wishlist" [ref=e522] [cursor=pointer]:
+                - img [ref=e523]
+              - img [ref=e527]:
+                - generic [ref=e534]: 1 kg
+              - generic [ref=e535]: Traditional Grains
+              - heading "Foxtail Millet" [level=3] [ref=e536] [cursor=pointer]
+              - generic [ref=e537]:
+                - img [ref=e538]
+                - generic [ref=e540]: "4.6"
+              - generic [ref=e541]:
+                - generic [ref=e542]:
+                  - generic [ref=e543]: ₹140
+                  - generic [ref=e544]: ₹165
+                - button "Add to cart" [ref=e545] [cursor=pointer]:
+                  - img [ref=e546]
+            - generic [ref=e550]:
+              - generic [ref=e552]: "-15%"
+              - button "Add to wishlist" [ref=e553] [cursor=pointer]:
+                - img [ref=e554]
+              - img [ref=e558]:
+                - generic [ref=e567]: DAL
+              - generic [ref=e568]: Pulses & Dals
+              - heading "Toor Dal" [level=3] [ref=e569] [cursor=pointer]
+              - generic [ref=e570]:
+                - img [ref=e571]
+                - generic [ref=e573]: "4.5"
+              - generic [ref=e574]:
+                - generic [ref=e575]:
+                  - generic [ref=e576]: ₹165
+                  - generic [ref=e577]: ₹195
+                - button "Add to cart" [ref=e578] [cursor=pointer]:
+                  - img [ref=e579]
+        - generic [ref=e584]:
+          - generic [ref=e585]:
+            - img [ref=e587]
+            - generic [ref=e589]:
+              - heading "Milled the week you order" [level=3] [ref=e590]
+              - paragraph [ref=e591]: We don't sit on inventory. Stone-milled in small batches so the oil and aroma reach you intact.
+          - generic [ref=e592]:
+            - img [ref=e594]
+            - generic [ref=e598]:
+              - heading "Vacuum-sealed for freshness" [level=3] [ref=e599]
+              - paragraph [ref=e600]: Multi-layer food-grade pouches with nitrogen flush — same standard used for export shipments.
+          - generic [ref=e601]:
+            - img [ref=e603]
+            - generic [ref=e606]:
+              - heading "Tracked from farm to door" [level=3] [ref=e607]
+              - paragraph [ref=e608]: Every pack carries a batch code linked to the farmer cluster and harvest date. Full transparency.
+        - generic [ref=e611]:
+          - img [ref=e614]:
+            - generic [ref=e641]: KRO
+          - generic [ref=e642]:
+            - generic [ref=e643]: Our Story
+            - heading "Royals from the soil up." [level=2] [ref=e644]
+            - blockquote [ref=e645]: "\"Every grain we sell was grown by a farmer we know by name, in a field we've walked.\""
+            - paragraph [ref=e646]: "Krish Royal Organics was born in Bengaluru from a simple frustration: why is genuinely organic, traditionally-processed food so hard to find, and when you do find it, why does it taste like a compromise?"
+            - paragraph [ref=e647]: We work directly with farmer clusters across Karnataka — Tumkur, Hassan, Dharwad, Raichur. No middlemen. Every batch is stone-milled or cold-pressed the week you order it.
+            - link "Meet our farmers" [ref=e648] [cursor=pointer]:
+              - /url: /our-farms
+              - text: Meet our farmers
+              - img [ref=e649]
+        - generic [ref=e651]:
+          - generic [ref=e652]:
+            - generic [ref=e653]: Cold-Pressed Collection
+            - heading "The old way of pressing — no heat, no chemicals." [level=2] [ref=e654]
+            - paragraph [ref=e655]: Wood-pressed on traditional wooden ghanis. The seed's oils and nutrients reach you intact.
+            - link "Shop All Oils" [ref=e656] [cursor=pointer]:
+              - /url: "#oils"
+              - text: Shop All Oils
+              - img [ref=e657]
+          - generic [ref=e659]: 🫙
+        - generic [ref=e660]:
+          - generic [ref=e661]:
+            - heading "Cold-Pressed Oils" [level=2] [ref=e662]
+            - link "All Products" [ref=e663] [cursor=pointer]:
+              - /url: "#"
+          - generic [ref=e664]:
+            - generic [ref=e665]:
+              - generic [ref=e667]: "-15%"
+              - button "Add to wishlist" [ref=e668] [cursor=pointer]:
+                - img [ref=e669]
+              - img [ref=e673]:
+                - generic [ref=e679]: COLD
+                - generic [ref=e680]: PRESSED
+              - generic [ref=e683]: Cold-Pressed Oils
+              - heading "Cold-Pressed Groundnut Oil" [level=3] [ref=e684] [cursor=pointer]
+              - generic [ref=e685]:
+                - img [ref=e686]
+                - generic [ref=e688]: "4.7"
+              - generic [ref=e689]:
+                - generic [ref=e690]:
+                  - generic [ref=e691]: ₹380
+                  - generic [ref=e692]: ₹445
+                - button "Add to cart" [ref=e693] [cursor=pointer]:
+                  - img [ref=e694]
+            - generic [ref=e698]:
+              - generic [ref=e700]: "-16%"
+              - button "Add to wishlist" [ref=e701] [cursor=pointer]:
+                - img [ref=e702]
+              - img [ref=e706]:
+                - generic [ref=e712]: COLD
+                - generic [ref=e713]: PRESSED
+              - generic [ref=e716]: Cold-Pressed Oils
+              - heading "Cold-Pressed Sesame Oil" [level=3] [ref=e717] [cursor=pointer]
+              - generic [ref=e718]:
+                - img [ref=e719]
+                - generic [ref=e721]: "4.8"
+              - generic [ref=e722]:
+                - generic [ref=e723]:
+                  - generic [ref=e724]: ₹295
+                  - generic [ref=e725]: ₹350
+                - button "Add to cart" [ref=e726] [cursor=pointer]:
+                  - img [ref=e727]
+            - generic [ref=e731]:
+              - generic [ref=e733]: HOT
+              - button "Add to wishlist" [ref=e734] [cursor=pointer]:
+                - img [ref=e735]
+              - img [ref=e739]:
+                - generic [ref=e745]: COLD
+                - generic [ref=e746]: PRESSED
+              - generic [ref=e749]: Cold-Pressed Oils
+              - heading "Cold-Pressed Coconut Oil" [level=3] [ref=e750] [cursor=pointer]
+              - generic [ref=e751]:
+                - img [ref=e752]
+                - generic [ref=e754]: "4.9"
+              - generic [ref=e755]:
+                - generic [ref=e756]:
+                  - generic [ref=e757]: ₹345
+                  - generic [ref=e758]: ₹405
+                - button "Add to cart" [ref=e759] [cursor=pointer]:
+                  - img [ref=e760]
+            - generic [ref=e764]:
+              - generic [ref=e766]: "-15%"
+              - button "Add to wishlist" [ref=e767] [cursor=pointer]:
+                - img [ref=e768]
+              - img [ref=e772]:
+                - generic [ref=e778]: COLD
+                - generic [ref=e779]: PRESSED
+              - generic [ref=e782]: Cold-Pressed Oils
+              - heading "Cold-Pressed Mustard Oil" [level=3] [ref=e783] [cursor=pointer]
+              - generic [ref=e784]:
+                - img [ref=e785]
+                - generic [ref=e787]: "4.6"
+              - generic [ref=e788]:
+                - generic [ref=e789]:
+                  - generic [ref=e790]: ₹320
+                  - generic [ref=e791]: ₹375
+                - button "Add to cart" [ref=e792] [cursor=pointer]:
+                  - img [ref=e793]
+            - generic [ref=e797]:
+              - generic [ref=e799]: NEW
+              - button "Add to wishlist" [ref=e800] [cursor=pointer]:
+                - img [ref=e801]
+              - img [ref=e805]:
+                - generic [ref=e811]: COLD
+                - generic [ref=e812]: PRESSED
+              - generic [ref=e815]: Cold-Pressed Oils
+              - heading "Cold-Pressed Sunflower Oil" [level=3] [ref=e816] [cursor=pointer]
+              - generic [ref=e817]:
+                - img [ref=e818]
+                - generic [ref=e820]: "4.4"
+              - generic [ref=e821]:
+                - generic [ref=e823]: ₹280
+                - button "Add to cart" [ref=e824] [cursor=pointer]:
+                  - img [ref=e825]
+            - generic [ref=e829]:
+              - generic [ref=e831]: "-10%"
+              - button "Add to wishlist" [ref=e832] [cursor=pointer]:
+                - img [ref=e833]
+              - img [ref=e837]:
+                - generic [ref=e843]: COLD
+                - generic [ref=e844]: PRESSED
+              - generic [ref=e847]: Cold-Pressed Oils
+              - heading "Cold-Pressed Castor Oil" [level=3] [ref=e848] [cursor=pointer]
+              - generic [ref=e849]:
+                - img [ref=e850]
+                - generic [ref=e852]: "4.3"
+              - generic [ref=e853]:
+                - generic [ref=e854]:
+                  - generic [ref=e855]: ₹185
+                  - generic [ref=e856]: ₹205
+                - button "Add to cart" [ref=e857] [cursor=pointer]:
+                  - img [ref=e858]
+        - generic [ref=e862]:
+          - generic [ref=e863]:
+            - heading "Flours & Millets" [level=2] [ref=e864]
+            - link "All Products" [ref=e865] [cursor=pointer]:
+              - /url: "#"
+          - generic [ref=e866]:
+            - generic [ref=e867]:
+              - generic [ref=e869]: "-18%"
+              - button "Add to wishlist" [ref=e870] [cursor=pointer]:
+                - img [ref=e871]
+              - img [ref=e875]:
+                - generic [ref=e882]: 1 kg
+              - generic [ref=e883]: Flours & Millets
+              - heading "Ragi Flour" [level=3] [ref=e884] [cursor=pointer]
+              - generic [ref=e885]:
+                - img [ref=e886]
+                - generic [ref=e888]: "4.8"
+              - generic [ref=e889]:
+                - generic [ref=e890]:
+                  - generic [ref=e891]: ₹185
+                  - generic [ref=e892]: ₹225
+                - button "Add to cart" [ref=e893] [cursor=pointer]:
+                  - img [ref=e894]
+            - generic [ref=e898]:
+              - generic [ref=e900]: "-14%"
+              - button "Add to wishlist" [ref=e901] [cursor=pointer]:
+                - img [ref=e902]
+              - img [ref=e906]:
+                - generic [ref=e913]: 1 kg
+              - generic [ref=e914]: Flours & Millets
+              - heading "Jowar Flour" [level=3] [ref=e915] [cursor=pointer]
+              - generic [ref=e916]:
+                - img [ref=e917]
+                - generic [ref=e919]: "4.6"
+              - generic [ref=e920]:
+                - generic [ref=e921]:
+                  - generic [ref=e922]: ₹160
+                  - generic [ref=e923]: ₹185
+                - button "Add to cart" [ref=e924] [cursor=pointer]:
+                  - img [ref=e925]
+            - generic [ref=e929]:
+              - generic [ref=e931]: "-17%"
+              - button "Add to wishlist" [ref=e932] [cursor=pointer]:
+                - img [ref=e933]
+              - img [ref=e937]:
+                - generic [ref=e944]: 1 kg
+              - generic [ref=e945]: Flours & Millets
+              - heading "Bajra Flour" [level=3] [ref=e946] [cursor=pointer]
+              - generic [ref=e947]:
+                - img [ref=e948]
+                - generic [ref=e950]: "4.5"
+              - generic [ref=e951]:
+                - generic [ref=e952]:
+                  - generic [ref=e953]: ₹145
+                  - generic [ref=e954]: ₹175
+                - button "Add to cart" [ref=e955] [cursor=pointer]:
+                  - img [ref=e956]
+            - generic [ref=e960]:
+              - generic [ref=e962]: HOT
+              - button "Add to wishlist" [ref=e963] [cursor=pointer]:
+                - img [ref=e964]
+              - img [ref=e968]:
+                - generic [ref=e975]: 1 kg
+              - generic [ref=e976]: Flours & Millets
+              - heading "Multi-grain Atta" [level=3] [ref=e977] [cursor=pointer]
+              - generic [ref=e978]:
+                - img [ref=e979]
+                - generic [ref=e981]: "4.8"
+              - generic [ref=e982]:
+                - generic [ref=e984]: ₹220
+                - button "Add to cart" [ref=e985] [cursor=pointer]:
+                  - img [ref=e986]
+            - generic [ref=e990]:
+              - generic [ref=e992]: "-17%"
+              - button "Add to wishlist" [ref=e993] [cursor=pointer]:
+                - img [ref=e994]
+              - img [ref=e998]:
+                - generic [ref=e1005]: 1 kg
+              - generic [ref=e1006]: Flours & Millets
+              - heading "Whole Wheat Atta" [level=3] [ref=e1007] [cursor=pointer]
+              - generic [ref=e1008]:
+                - img [ref=e1009]
+                - generic [ref=e1011]: "4.4"
+              - generic [ref=e1012]:
+                - generic [ref=e1013]:
+                  - generic [ref=e1014]: ₹175
+                  - generic [ref=e1015]: ₹210
+                - button "Add to cart" [ref=e1016] [cursor=pointer]:
+                  - img [ref=e1017]
+            - generic [ref=e1021]:
+              - generic [ref=e1023]: NEW
+              - button "Add to wishlist" [ref=e1024] [cursor=pointer]:
+                - img [ref=e1025]
+              - img [ref=e1029]:
+                - generic [ref=e1036]: 1 kg
+              - generic [ref=e1037]: Flours & Millets
+              - heading "Foxtail Millet" [level=3] [ref=e1038] [cursor=pointer]
+              - generic [ref=e1039]:
+                - img [ref=e1040]
+                - generic [ref=e1042]: "4.6"
+              - generic [ref=e1043]:
+                - generic [ref=e1044]:
+                  - generic [ref=e1045]: ₹140
+                  - generic [ref=e1046]: ₹165
+                - button "Add to cart" [ref=e1047] [cursor=pointer]:
+                  - img [ref=e1048]
+        - generic [ref=e1052]:
+          - generic:
+            - img
+          - generic [ref=e1053]:
+            - generic [ref=e1054]: Monthly Subscription
+            - heading "KRO Monthly Box — your pantry, refilled." [level=2] [ref=e1055]
+            - paragraph [ref=e1056]: Essentials · Family · Wellness boxes. Curated fresh every month. Save 10%, always. Cancel anytime.
+            - generic [ref=e1057]:
+              - generic [ref=e1058]: KRO Essentials — ₹999/mo
+              - generic [ref=e1059]: KRO Family — ₹2,499/mo
+              - generic [ref=e1060]: KRO Wellness — ₹1,499/mo
+          - generic [ref=e1061]:
+            - link "Start a Box" [ref=e1062] [cursor=pointer]:
+              - /url: "#"
+            - generic [ref=e1063]: Cancel anytime · No commitment
+        - generic [ref=e1064]:
+          - generic [ref=e1065]:
+            - heading "Spices & Masalas" [level=2] [ref=e1066]
+            - link "All Products" [ref=e1067] [cursor=pointer]:
+              - /url: "#"
+          - generic [ref=e1068]:
+            - generic [ref=e1069]:
+              - generic [ref=e1071]: "-15%"
+              - button "Add to wishlist" [ref=e1072] [cursor=pointer]:
+                - img [ref=e1073]
+              - img [ref=e1077]:
+                - generic [ref=e1082]: ORGANIC
+              - generic [ref=e1084]: Spices & Masalas
+              - heading "Organic Turmeric Powder" [level=3] [ref=e1085] [cursor=pointer]
+              - generic [ref=e1086]:
+                - img [ref=e1087]
+                - generic [ref=e1089]: "4.9"
+              - generic [ref=e1090]:
+                - generic [ref=e1091]:
+                  - generic [ref=e1092]: ₹125
+                  - generic [ref=e1093]: ₹148
+                - button "Add to cart" [ref=e1094] [cursor=pointer]:
+                  - img [ref=e1095]
+            - generic [ref=e1099]:
+              - generic [ref=e1101]: "-16%"
+              - button "Add to wishlist" [ref=e1102] [cursor=pointer]:
+                - img [ref=e1103]
+              - img [ref=e1107]:
+                - generic [ref=e1112]: ORGANIC
+              - generic [ref=e1114]: Spices & Masalas
+              - heading "Red Chilli Powder" [level=3] [ref=e1115] [cursor=pointer]
+              - generic [ref=e1116]:
+                - img [ref=e1117]
+                - generic [ref=e1119]: "4.7"
+              - generic [ref=e1120]:
+                - generic [ref=e1121]:
+                  - generic [ref=e1122]: ₹135
+                  - generic [ref=e1123]: ₹160
+                - button "Add to cart" [ref=e1124] [cursor=pointer]:
+                  - img [ref=e1125]
+            - generic [ref=e1129]:
+              - generic [ref=e1131]: "-15%"
+              - button "Add to wishlist" [ref=e1132] [cursor=pointer]:
+                - img [ref=e1133]
+              - img [ref=e1137]:
+                - generic [ref=e1142]: ORGANIC
+              - generic [ref=e1144]: Spices & Masalas
+              - heading "Coriander Powder" [level=3] [ref=e1145] [cursor=pointer]
+              - generic [ref=e1146]:
+                - img [ref=e1147]
+                - generic [ref=e1149]: "4.6"
+              - generic [ref=e1150]:
+                - generic [ref=e1151]:
+                  - generic [ref=e1152]: ₹110
+                  - generic [ref=e1153]: ₹130
+                - button "Add to cart" [ref=e1154] [cursor=pointer]:
+                  - img [ref=e1155]
+            - generic [ref=e1159]:
+              - generic [ref=e1161]: HOT
+              - button "Add to wishlist" [ref=e1162] [cursor=pointer]:
+                - img [ref=e1163]
+              - img [ref=e1167]:
+                - generic [ref=e1172]: ORGANIC
+              - generic [ref=e1174]: Spices & Masalas
+              - heading "Garam Masala" [level=3] [ref=e1175] [cursor=pointer]
+              - generic [ref=e1176]:
+                - img [ref=e1177]
+                - generic [ref=e1179]: "4.8"
+              - generic [ref=e1180]:
+                - generic [ref=e1181]:
+                  - generic [ref=e1182]: ₹155
+                  - generic [ref=e1183]: ₹185
+                - button "Add to cart" [ref=e1184] [cursor=pointer]:
+                  - img [ref=e1185]
+            - generic [ref=e1189]:
+              - generic [ref=e1191]: "-15%"
+              - button "Add to wishlist" [ref=e1192] [cursor=pointer]:
+                - img [ref=e1193]
+              - img [ref=e1197]:
+                - generic [ref=e1202]: ORGANIC
+              - generic [ref=e1204]: Spices & Masalas
+              - heading "Cumin Seeds" [level=3] [ref=e1205] [cursor=pointer]
+              - generic [ref=e1206]:
+                - img [ref=e1207]
+                - generic [ref=e1209]: "4.7"
+              - generic [ref=e1210]:
+                - generic [ref=e1211]:
+                  - generic [ref=e1212]: ₹140
+                  - generic [ref=e1213]: ₹165
+                - button "Add to cart" [ref=e1214] [cursor=pointer]:
+                  - img [ref=e1215]
+            - generic [ref=e1219]:
+              - generic [ref=e1221]: NEW
+              - button "Add to wishlist" [ref=e1222] [cursor=pointer]:
+                - img [ref=e1223]
+              - img [ref=e1227]:
+                - generic [ref=e1232]: ORGANIC
+              - generic [ref=e1234]: Spices & Masalas
+              - heading "Whole Black Pepper" [level=3] [ref=e1235] [cursor=pointer]
+              - generic [ref=e1236]:
+                - img [ref=e1237]
+                - generic [ref=e1239]: "4.8"
+              - generic [ref=e1240]:
+                - generic [ref=e1241]:
+                  - generic [ref=e1242]: ₹195
+                  - generic [ref=e1243]: ₹230
+                - button "Add to cart" [ref=e1244] [cursor=pointer]:
+                  - img [ref=e1245]
+        - generic [ref=e1249]:
+          - generic [ref=e1250]:
+            - heading "Ghee, Honey & Jaggery" [level=2] [ref=e1251]
+            - link "All Products" [ref=e1252] [cursor=pointer]:
+              - /url: "#"
+          - generic [ref=e1253]:
+            - generic [ref=e1254]:
+              - generic [ref=e1256]: HOT
+              - button "Add to wishlist" [ref=e1257] [cursor=pointer]:
+                - img [ref=e1258]
+              - img [ref=e1262]:
+                - generic [ref=e1271]: A2 BILONA
+                - generic [ref=e1272]: GHEE
+              - generic [ref=e1273]: Ghee
+              - heading "A2 Bilona Ghee" [level=3] [ref=e1274] [cursor=pointer]
+              - generic [ref=e1275]:
+                - img [ref=e1276]
+                - generic [ref=e1278]: "4.9"
+              - generic [ref=e1279]:
+                - generic [ref=e1281]: ₹649
+                - button "Add to cart" [ref=e1282] [cursor=pointer]:
+                  - img [ref=e1283]
+            - generic [ref=e1287]:
+              - generic [ref=e1289]: "-14%"
+              - button "Add to wishlist" [ref=e1290] [cursor=pointer]:
+                - img [ref=e1291]
+              - img [ref=e1295]:
+                - generic [ref=e1304]: A2 BILONA
+                - generic [ref=e1305]: GHEE
+              - generic [ref=e1306]: Ghee
+              - heading "A2 Buffalo Ghee" [level=3] [ref=e1307] [cursor=pointer]
+              - generic [ref=e1308]:
+                - img [ref=e1309]
+                - generic [ref=e1311]: "4.7"
+              - generic [ref=e1312]:
+                - generic [ref=e1313]:
+                  - generic [ref=e1314]: ₹595
+                  - generic [ref=e1315]: ₹695
+                - button "Add to cart" [ref=e1316] [cursor=pointer]:
+                  - img [ref=e1317]
+            - generic [ref=e1321]:
+              - generic [ref=e1323]: NEW
+              - button "Add to wishlist" [ref=e1324] [cursor=pointer]:
+                - img [ref=e1325]
+              - img [ref=e1329]:
+                - generic [ref=e1336]: HONEY
+              - generic [ref=e1338]: Honey
+              - heading "Wild Forest Honey" [level=3] [ref=e1339] [cursor=pointer]
+              - generic [ref=e1340]:
+                - img [ref=e1341]
+                - generic [ref=e1343]: "4.9"
+              - generic [ref=e1344]:
+                - generic [ref=e1346]: ₹325
+                - button "Add to cart" [ref=e1347] [cursor=pointer]:
+                  - img [ref=e1348]
+            - generic [ref=e1352]:
+              - generic [ref=e1354]: "-15%"
+              - button "Add to wishlist" [ref=e1355] [cursor=pointer]:
+                - img [ref=e1356]
+              - img [ref=e1360]:
+                - generic [ref=e1367]: HONEY
+              - generic [ref=e1369]: Honey
+              - heading "Multi-floral Honey" [level=3] [ref=e1370] [cursor=pointer]
+              - generic [ref=e1371]:
+                - img [ref=e1372]
+                - generic [ref=e1374]: "4.6"
+              - generic [ref=e1375]:
+                - generic [ref=e1376]:
+                  - generic [ref=e1377]: ₹420
+                  - generic [ref=e1378]: ₹495
+                - button "Add to cart" [ref=e1379] [cursor=pointer]:
+                  - img [ref=e1380]
+            - generic [ref=e1384]:
+              - generic [ref=e1386]: "-15%"
+              - button "Add to wishlist" [ref=e1387] [cursor=pointer]:
+                - img [ref=e1388]
+              - img [ref=e1392]:
+                - generic [ref=e1398]: JAGGERY
+              - generic [ref=e1399]: Jaggery
+              - heading "Sugarcane Jaggery" [level=3] [ref=e1400] [cursor=pointer]
+              - generic [ref=e1401]:
+                - img [ref=e1402]
+                - generic [ref=e1404]: "4.5"
+              - generic [ref=e1405]:
+                - generic [ref=e1406]:
+                  - generic [ref=e1407]: ₹145
+                  - generic [ref=e1408]: ₹170
+                - button "Add to cart" [ref=e1409] [cursor=pointer]:
+                  - img [ref=e1410]
+            - generic [ref=e1414]:
+              - generic [ref=e1416]: "-15%"
+              - button "Add to wishlist" [ref=e1417] [cursor=pointer]:
+                - img [ref=e1418]
+              - img [ref=e1422]:
+                - generic [ref=e1428]: JAGGERY
+              - generic [ref=e1429]: Jaggery
+              - heading "Palm Jaggery" [level=3] [ref=e1430] [cursor=pointer]
+              - generic [ref=e1431]:
+                - img [ref=e1432]
+                - generic [ref=e1434]: "4.7"
+              - generic [ref=e1435]:
+                - generic [ref=e1436]:
+                  - generic [ref=e1437]: ₹165
+                  - generic [ref=e1438]: ₹195
+                - button "Add to cart" [ref=e1439] [cursor=pointer]:
+                  - img [ref=e1440]
+        - generic [ref=e1444]:
+          - generic [ref=e1445]:
+            - heading "From KRO Kitchen" [level=2] [ref=e1446]
+            - link "All Recipes" [ref=e1447] [cursor=pointer]:
+              - /url: /kro-kitchen
+              - text: All Recipes
+              - img [ref=e1448]
+          - generic [ref=e1450]:
+            - generic [ref=e1451] [cursor=pointer]:
+              - generic [ref=e1452]: 🫓
+              - generic [ref=e1453]:
+                - text: Millet Recipes
+                - heading "Ragi Mudde with Cold-Pressed Groundnut Chutney" [level=3] [ref=e1454]
+                - generic [ref=e1455]: ⏱ 25 min
+            - generic [ref=e1456] [cursor=pointer]:
+              - generic [ref=e1457]: 🥣
+              - generic [ref=e1458]:
+                - text: Healthy Swaps
+                - heading "Three-Millet Upma in 10 Minutes" [level=3] [ref=e1459]
+                - generic [ref=e1460]: ⏱ 10 min
+            - generic [ref=e1461] [cursor=pointer]:
+              - generic [ref=e1462]: 🥮
+              - generic [ref=e1463]:
+                - text: Traditional Sweets
+                - heading "Holige with Palm Jaggery" [level=3] [ref=e1464]
+                - generic [ref=e1465]: ⏱ 45 min
+        - generic [ref=e1466]:
+          - heading "What Bengaluru families say" [level=2] [ref=e1468]
+          - generic [ref=e1469]:
+            - generic [ref=e1470]:
+              - generic [ref=e1471]:
+                - img [ref=e1472]
+                - img [ref=e1474]
+                - img [ref=e1476]
+                - img [ref=e1478]
+                - img [ref=e1480]
+              - paragraph [ref=e1482]: “The ragi flour is incredible — you can actually smell the grain. Our family has switched completely from supermarket brands.”
+              - generic [ref=e1483]:
+                - generic [ref=e1484]: Priya S.
+                - generic [ref=e1485]: Koramangala, Bengaluru
+            - generic [ref=e1486]:
+              - generic [ref=e1487]:
+                - img [ref=e1488]
+                - img [ref=e1490]
+                - img [ref=e1492]
+                - img [ref=e1494]
+                - img [ref=e1496]
+              - paragraph [ref=e1498]: “The A2 bilona ghee is worth every rupee. The aroma when it hits the pan is unlike anything we've had before.”
+              - generic [ref=e1499]:
+                - generic [ref=e1500]: Karthik M.
+                - generic [ref=e1501]: Whitefield, Bengaluru
+            - generic [ref=e1502]:
+              - generic [ref=e1503]:
+                - img [ref=e1504]
+                - img [ref=e1506]
+                - img [ref=e1508]
+                - img [ref=e1510]
+                - img [ref=e1512]
+              - paragraph [ref=e1514]: “Wild forest honey is genuinely different. Not overly sweet, deeply complex. Fast delivery too — same day!”
+              - generic [ref=e1515]:
+                - generic [ref=e1516]: Anita R.
+                - generic [ref=e1517]: Indiranagar, Bengaluru
+        - generic [ref=e1518]:
+          - heading "Certified. Tested. Verified." [level=2] [ref=e1519]
+          - paragraph [ref=e1520]: Every claim, every batch. Lab reports available on request.
+          - generic [ref=e1521]:
+            - link "FSSAI Certified" [ref=e1522] [cursor=pointer]:
+              - /url: /certifications
+            - link "India Organic" [ref=e1523] [cursor=pointer]:
+              - /url: /certifications
+            - link "Jaivik Bharat" [ref=e1524] [cursor=pointer]:
+              - /url: /certifications
+            - link "NPOP Certified" [ref=e1525] [cursor=pointer]:
+              - /url: /certifications
+            - link "Lab Tested Every Batch" [ref=e1526] [cursor=pointer]:
+              - /url: /certifications
+        - generic [ref=e1528]:
+          - generic [ref=e1529]:
+            - heading "Recipes, harvest news, member-only offers." [level=2] [ref=e1530]
+            - paragraph [ref=e1531]: New recipe every week. Get them first.
+          - generic [ref=e1532]:
+            - textbox "Enter your email address" [ref=e1533]
+            - button "Subscribe" [ref=e1534] [cursor=pointer]
+    - contentinfo [ref=e1535]:
+      - generic [ref=e1537]:
+        - generic [ref=e1538]:
+          - heading "Get recipes + first-order discount" [level=4] [ref=e1539]
+          - paragraph [ref=e1540]: New harvest updates straight to your inbox.
+        - generic [ref=e1541]:
+          - textbox "Enter your email address" [ref=e1542]
+          - button "Subscribe" [ref=e1543] [cursor=pointer]
+        - generic [ref=e1544]:
+          - link "Instagram" [ref=e1545] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e1546]
+          - link "YouTube" [ref=e1549] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e1550]
+          - link "Facebook" [ref=e1552] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e1553]
+          - link "WhatsApp" [ref=e1555] [cursor=pointer]:
+            - /url: https://wa.me/91XXXXXXXXXX
+            - img [ref=e1556]
+      - generic [ref=e1558]:
+        - generic [ref=e1559]:
+          - generic [ref=e1560]:
+            - generic [ref=e1562]: K
+            - generic [ref=e1563]:
+              - generic [ref=e1564]: Krish Royal.
+              - generic [ref=e1565]: Organics
+          - paragraph [ref=e1566]: Premium organic food from Karnataka's farmer clusters — stone-milled, cold-pressed, and delivered fresh to your door.
+          - generic [ref=e1567]: "FSSAI Lic. #XXXXXXXXX"
+        - generic [ref=e1568]:
+          - heading "Shop" [level=4] [ref=e1569]
+          - list [ref=e1570]:
+            - listitem [ref=e1571]:
+              - link "Flours & Millets" [ref=e1572] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1573]:
+              - link "Cold-Pressed Oils" [ref=e1574] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1575]:
+              - link "Pulses" [ref=e1576] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1577]:
+              - link "Spices" [ref=e1578] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1579]:
+              - link "Ghee" [ref=e1580] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1581]:
+              - link "Jaggery" [ref=e1582] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1583]:
+              - link "Honey" [ref=e1584] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1585]:
+              - link "Traditional Grains" [ref=e1586] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e1587]:
+          - heading "KRO" [level=4] [ref=e1588]
+          - list [ref=e1589]:
+            - listitem [ref=e1590]:
+              - link "About KRO" [ref=e1591] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1592]:
+              - link "Our Farms" [ref=e1593] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1594]:
+              - link "KRO Kitchen" [ref=e1595] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1596]:
+              - link "Certifications" [ref=e1597] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1598]:
+              - link "Wholesale" [ref=e1599] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1600]:
+              - link "Contact" [ref=e1601] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e1602]:
+          - heading "Help" [level=4] [ref=e1603]
+          - list [ref=e1604]:
+            - listitem [ref=e1605]:
+              - link "Shipping & Delivery" [ref=e1606] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1607]:
+              - link "Returns & Refunds" [ref=e1608] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1609]:
+              - link "FAQ" [ref=e1610] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1611]:
+              - link "Track Order" [ref=e1612] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1613]:
+              - link "WhatsApp Us" [ref=e1614] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e1615]:
+          - heading "Legal" [level=4] [ref=e1616]
+          - list [ref=e1617]:
+            - listitem [ref=e1618]:
+              - link "Privacy Policy" [ref=e1619] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1620]:
+              - link "Terms of Service" [ref=e1621] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1622]:
+              - link "Refund Policy" [ref=e1623] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1624]:
+              - link "Shipping Policy" [ref=e1625] [cursor=pointer]:
+                - /url: "#"
+      - generic [ref=e1627]:
+        - generic [ref=e1628]: "© 2026 Krish Royal Organics. FSSAI Lic. #XXXXXXXXX"
+        - generic [ref=e1629]:
+          - generic [ref=e1630]: UPI
+          - generic [ref=e1631]: Visa
+          - generic [ref=e1632]: Mastercard
+          - generic [ref=e1633]: RuPay
+          - generic [ref=e1634]: COD
+          - generic [ref=e1635]: Razorpay
+      - button "Scroll back to top" [ref=e1636] [cursor=pointer]:
+        - img [ref=e1637]

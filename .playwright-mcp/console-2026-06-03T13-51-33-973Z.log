@@ -1,0 +1,49 @@
+[     613ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 7 7". @ http://localhost:3000/:0
+[     614ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 5 5". @ http://localhost:3000/:0
+[     614ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 8 8". @ http://localhost:3000/:0
+[     615ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 8 8". @ http://localhost:3000/:0
+[     615ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 8 8". @ http://localhost:3000/:0
+[     615ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 8 8". @ http://localhost:3000/:0
+[     615ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 8 8". @ http://localhost:3000/:0
+[     615ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 8 8". @ http://localhost:3000/:0
+[     615ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 8 8". @ http://localhost:3000/:0
+[     616ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 6 6". @ http://localhost:3000/:0
+[     616ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 6 6". @ http://localhost:3000/:0
+[     616ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 6 6". @ http://localhost:3000/:0
+[     616ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 6 6". @ http://localhost:3000/:0
+[     616ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 6 6". @ http://localhost:3000/:0
+[     616ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 6 6". @ http://localhost:3000/:0
+[     917ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0o80_next_dist_1f6wh8x._.js:2477
+[    1043ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0o80_next_dist_1f6wh8x._.js:2477
+[   73595ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0o80_next_dist_1f6wh8x._.js:2477
+[   73876ms] [LOG] [Fast Refresh] done in 386ms @ http://localhost:3000/_next/static/chunks/0o80_next_dist_1f6wh8x._.js:2477
+[   73889ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/shop:0
+[   74013ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0o80_next_dist_1f6wh8x._.js:2477
+[   74030ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0o80_next_dist_1f6wh8x._.js:2477
+[   75757ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0o80_next_dist_1f6wh8x._.js:2477
+[   75771ms] [LOG] [Fast Refresh] done in 116ms @ http://localhost:3000/_next/static/chunks/0o80_next_dist_1f6wh8x._.js:2477
+[   75784ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 7 7". @ http://localhost:3000/:0
+[   75785ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 5 5". @ http://localhost:3000/:0
+[   75785ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 8 8". @ http://localhost:3000/:0
+[   75786ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 8 8". @ http://localhost:3000/:0
+[   75786ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 8 8". @ http://localhost:3000/:0
+[   75786ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 8 8". @ http://localhost:3000/:0
+[   75786ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 8 8". @ http://localhost:3000/:0
+[   75787ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 8 8". @ http://localhost:3000/:0
+[   75787ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 8 8". @ http://localhost:3000/:0
+[   75787ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 6 6". @ http://localhost:3000/:0
+[   75787ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 6 6". @ http://localhost:3000/:0
+[   75787ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 6 6". @ http://localhost:3000/:0
+[   75787ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 6 6". @ http://localhost:3000/:0
+[   75788ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 6 6". @ http://localhost:3000/:0
+[   75788ms] [ERROR] Error: <rect> attribute rx: Expected length, "0 0 6 6". @ http://localhost:3000/:0
+[   75878ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0o80_next_dist_1f6wh8x._.js:2477
+[   75891ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0o80_next_dist_1f6wh8x._.js:2477
+[   90987ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0o80_next_dist_1f6wh8x._.js:2477
+[   91169ms] [LOG] [Fast Refresh] done in 84ms @ http://localhost:3000/_next/static/chunks/0o80_next_dist_1f6wh8x._.js:2477
+[   91931ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0o80_next_dist_1f6wh8x._.js:2477
+[   92073ms] [LOG] [Fast Refresh] done in 64ms @ http://localhost:3000/_next/static/chunks/0o80_next_dist_1f6wh8x._.js:2477
+[   93443ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0o80_next_dist_1f6wh8x._.js:2477
+[   93584ms] [LOG] [Fast Refresh] done in 71ms @ http://localhost:3000/_next/static/chunks/0o80_next_dist_1f6wh8x._.js:2477
+[   94804ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0o80_next_dist_1f6wh8x._.js:2477
+[   94965ms] [LOG] [Fast Refresh] done in 84ms @ http://localhost:3000/_next/static/chunks/0o80_next_dist_1f6wh8x._.js:2477
