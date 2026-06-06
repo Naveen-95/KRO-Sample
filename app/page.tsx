@@ -3,6 +3,7 @@
 import React from "react";
 import Hero from "@/components/sections/hero";
 import InfoBar from "@/components/sections/info-bar";
+import WellnessCategories from "@/components/sections/wellness-categories";
 import PopularCategories from "@/components/sections/popular-categories";
 import CategoryShelf from "@/components/sections/category-shelf";
 import MiddleBanners from "@/components/sections/middle-banners";
@@ -46,7 +47,10 @@ export default function Home() {
       {/* 2. USP / Trust bar */}
       <InfoBar />
 
-      {/* 3. Featured categories (8 categories, 4-col grid) */}
+      {/* 3. Shop by Wellness Goal (Diabetic, Weight Loss, etc.) */}
+      <WellnessCategories />
+
+      {/* 4. Featured categories (8 categories, 4-col grid) */}
       <PopularCategories />
 
       {/* 4. Bestsellers shelf */}

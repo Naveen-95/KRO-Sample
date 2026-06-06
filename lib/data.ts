@@ -501,6 +501,101 @@ export const GRAINS: Product[] = [
   },
 ];
 
+// Wellness/Health-based categories
+export interface WellnessCategory {
+  id: string;
+  title: string;
+  subtitle: string;
+  productCount: number;
+  icon: string;
+  bgColor: string;
+  iconColor: string;
+  productSlugs: string[]; // For filtering
+}
+
+export const WELLNESS_CATEGORIES: WellnessCategory[] = [
+  {
+    id: "diabetic",
+    title: "Diabetic Friendly",
+    subtitle: "Low GI grains & millets",
+    productCount: 12,
+    icon: "diabetic",
+    bgColor: "bg-[#E8F5E9]",
+    iconColor: "text-green-700",
+    productSlugs: ["ragi-flour", "jowar-flour", "bajra-flour", "foxtail-millet"],
+  },
+  {
+    id: "weight-loss",
+    title: "Weight Management",
+    subtitle: "High fiber, low calorie",
+    productCount: 18,
+    icon: "weight",
+    bgColor: "bg-[#FFF3E0]",
+    iconColor: "text-orange-700",
+    productSlugs: ["quinoa", "brown-rice", "moong-dal"],
+  },
+  {
+    id: "heart-health",
+    title: "Heart Health",
+    subtitle: "Cold-pressed oils & seeds",
+    productCount: 9,
+    icon: "heart",
+    bgColor: "bg-[#FFEBEE]",
+    iconColor: "text-red-700",
+    productSlugs: ["cold-pressed-groundnut-oil", "cold-pressed-sesame-oil"],
+  },
+  {
+    id: "immunity",
+    title: "Immunity Booster",
+    subtitle: "Turmeric, ginger & honey",
+    productCount: 15,
+    icon: "immunity",
+    bgColor: "bg-[#FFF8E1]",
+    iconColor: "text-amber-700",
+    productSlugs: ["organic-turmeric-powder", "wild-forest-honey", "multi-floral-honey"],
+  },
+  {
+    id: "gut-health",
+    title: "Gut Health",
+    subtitle: "Fermented & fiber-rich",
+    productCount: 11,
+    icon: "gut",
+    bgColor: "bg-[#F3E5F5]",
+    iconColor: "text-purple-700",
+    productSlugs: ["toor-dal", "moong-dal", "chana-dal"],
+  },
+  {
+    id: "kids-nutrition",
+    title: "Kids Nutrition",
+    subtitle: "Iron-rich & growth-friendly",
+    productCount: 14,
+    icon: "kids",
+    bgColor: "bg-[#E3F2FD]",
+    iconColor: "text-blue-700",
+    productSlugs: ["ragi-flour", "a2-bilona-ghee", "wild-forest-honey"],
+  },
+  {
+    id: "pregnancy",
+    title: "Pregnancy & Lactation",
+    subtitle: "Ghee, nuts & wholesome grains",
+    productCount: 10,
+    icon: "pregnancy",
+    bgColor: "bg-[#FCE4EC]",
+    iconColor: "text-pink-700",
+    productSlugs: ["a2-bilona-ghee", "a2-buffalo-ghee", "wild-forest-honey"],
+  },
+  {
+    id: "senior-wellness",
+    title: "Senior Wellness",
+    subtitle: "Easy-digest & joint health",
+    productCount: 8,
+    icon: "senior",
+    bgColor: "bg-[#EFEBE9]",
+    iconColor: "text-amber-900",
+    productSlugs: ["a2-bilona-ghee", "organic-turmeric-powder", "moong-dal"],
+  },
+];
+
 // Recipe data
 export interface Recipe {
   id: string;
