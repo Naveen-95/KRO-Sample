@@ -10,17 +10,45 @@ import {
   X,
   Phone,
   MapPin,
+  ChevronDown,
+  Activity,
+  Apple,
+  Shield,
+  Sparkles,
+  Baby,
+  Flower,
+  Users,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const NAV_LINKS = [
-  { label: "Home",           href: "/" },
-  { label: "Shop",           href: "/shop" },
-  { label: "KRO Kitchen",    href: "/kro-kitchen" },
-  { label: "Our Farms",      href: "/our-farms" },
-  { label: "Certifications", href: "/certifications" },
-  { label: "About",          href: "/about" },
-  { label: "Contact",        href: "/contact" },
+  { label: "Home",           href: "/",              hasDropdown: false },
+  { label: "Shop",           href: "/shop",          hasDropdown: true },
+  { label: "KRO Kitchen",    href: "/kro-kitchen",   hasDropdown: false },
+  { label: "Our Farms",      href: "/our-farms",     hasDropdown: false },
+  { label: "Certifications", href: "/certifications", hasDropdown: false },
+  { label: "About",          href: "/about",         hasDropdown: false },
+  { label: "Contact",        href: "/contact",       hasDropdown: false },
+];
+
+const MEGA_MENU_WELLNESS = [
+  { id: "diabetic",        label: "Diabetic Friendly",  icon: <Activity className="w-4 h-4" />,  color: "text-green-700" },
+  { id: "weight-loss",     label: "Weight Loss",        icon: <Apple className="w-4 h-4" />,     color: "text-orange-700" },
+  { id: "heart-health",    label: "Heart Health",       icon: <Heart className="w-4 h-4" />,     color: "text-red-700" },
+  { id: "immunity",        label: "Immunity Booster",   icon: <Shield className="w-4 h-4" />,    color: "text-amber-700" },
+  { id: "gut-health",      label: "Gut Health",         icon: <Sparkles className="w-4 h-4" />,  color: "text-purple-700" },
+  { id: "kids-nutrition",  label: "Kids Nutrition",     icon: <Baby className="w-4 h-4" />,      color: "text-blue-700" },
+  { id: "pregnancy",       label: "Pregnancy",          icon: <Flower className="w-4 h-4" />,    color: "text-pink-700" },
+  { id: "senior-wellness", label: "Senior Wellness",    icon: <Users className="w-4 h-4" />,     color: "text-stone-700" },
+];
+
+const MEGA_MENU_CATEGORIES = [
+  { name: "Flours & Millets",   items: ["Ragi Flour", "Jowar Flour", "Bajra Flour", "Multi-grain Atta"] },
+  { name: "Cold-Pressed Oils",  items: ["Groundnut Oil", "Sesame Oil", "Coconut Oil", "Mustard Oil"] },
+  { name: "Pulses & Dals",      items: ["Toor Dal", "Moong Dal", "Chana Dal", "Rajma"] },
+  { name: "Spices & Masalas",   items: ["Turmeric", "Red Chilli", "Garam Masala", "Cumin"] },
+  { name: "Ghee & Dairy",       items: ["A2 Bilona Ghee", "A2 Cow Ghee", "Buffalo Ghee"] },
+  { name: "Honey & Jaggery",    items: ["Wild Forest Honey", "Multi-floral", "Palm Jaggery"] },
 ];
 
 const MARQUEE_TEXT =
@@ -29,6 +57,7 @@ const MARQUEE_TEXT =
 export default function Header() {
   const [searchQuery, setSearchQuery] = useState("");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showMegaMenu, setShowMegaMenu] = useState(false);
 
   return (
     <header className="w-full bg-white border-b border-gray-100 flex flex-col z-30 sticky top-0">
@@ -129,23 +158,30 @@ export default function Header() {
       </div>
 
       {/* ── Row 3: Navigation menu (desktop) ── */}
-      <div className="w-full hidden md:block bg-white">
+      <div className="w-full hidden md:block bg-white relative">
         <div className="max-w-[1360px] mx-auto px-4 lg:px-8 flex items-center justify-between py-2">
           {/* Primary nav */}
           <nav className="flex items-center gap-1">
             {NAV_LINKS.map((link) => (
-              <a
+              <div
                 key={link.href}
-                href={link.href}
-                className={cn(
-                  "px-3 py-1.5 text-[13px] font-medium rounded-lg transition-all",
-                  link.href === "/"
-                    ? "text-primary-green font-semibold"
-                    : "text-gray-600 hover:text-primary-green hover:bg-primary-lightGreen"
-                )}
+                className="relative"
+                onMouseEnter={() => link.hasDropdown && setShowMegaMenu(true)}
+                onMouseLeave={() => link.hasDropdown && setShowMegaMenu(false)}
               >
-                {link.label}
-              </a>
+                <a
+                  href={link.href}
+                  className={cn(
+                    "px-3 py-1.5 text-[13px] font-medium rounded-lg transition-all flex items-center gap-1",
+                    link.href === "/"
+                      ? "text-primary-green font-semibold"
+                      : "text-gray-600 hover:text-primary-green hover:bg-primary-lightGreen"
+                  )}
+                >
+                  {link.label}
+                  {link.hasDropdown && <ChevronDown className="w-3 h-3" />}
+                </a>
+              </div>
             ))}
           </nav>
 
@@ -155,6 +191,102 @@ export default function Header() {
             Same-day Bengaluru delivery available
           </span>
         </div>
+
+        {/* ── MEGA MENU DROPDOWN (Shop) ── */}
+        {showMegaMenu && (
+          <div
+            className="absolute left-0 right-0 top-full bg-white border-t border-gray-100 shadow-xl z-50 animate-fade-in"
+            onMouseEnter={() => setShowMegaMenu(true)}
+            onMouseLeave={() => setShowMegaMenu(false)}
+          >
+            <div className="max-w-[1360px] mx-auto px-4 lg:px-8 py-8">
+              <div className="grid grid-cols-12 gap-8">
+                {/* Column 1: Shop by Wellness Goal */}
+                <div className="col-span-3">
+                  <h3 className="text-xs font-bold uppercase tracking-widest text-primary-gold mb-4">
+                    Shop by Goal
+                  </h3>
+                  <div className="space-y-2">
+                    {MEGA_MENU_WELLNESS.map((item) => (
+                      <a
+                        key={item.id}
+                        href={`/shop?wellness=${item.id}`}
+                        className="flex items-center gap-2 p-2 rounded-lg hover:bg-primary-lightGreen transition-colors group"
+                      >
+                        <span className={item.color}>{item.icon}</span>
+                        <span className="text-sm text-gray-700 group-hover:text-primary-green font-medium">
+                          {item.label}
+                        </span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Columns 2-3: Categories */}
+                <div className="col-span-6">
+                  <h3 className="text-xs font-bold uppercase tracking-widest text-primary-gold mb-4">
+                    Shop by Category
+                  </h3>
+                  <div className="grid grid-cols-2 gap-6">
+                    {MEGA_MENU_CATEGORIES.map((cat) => (
+                      <div key={cat.name}>
+                        <a
+                          href="/shop"
+                          className="font-bold text-gray-800 hover:text-primary-green text-sm mb-2 block"
+                        >
+                          {cat.name}
+                        </a>
+                        <ul className="space-y-1">
+                          {cat.items.map((item) => (
+                            <li key={item}>
+                              <a
+                                href="/shop"
+                                className="text-xs text-gray-600 hover:text-primary-green block transition-colors"
+                              >
+                                {item}
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Column 4: Featured Banner */}
+                <div className="col-span-3">
+                  <h3 className="text-xs font-bold uppercase tracking-widest text-primary-gold mb-4">
+                    This Week's Pick
+                  </h3>
+                  <a
+                    href="/product/a2-bilona-ghee"
+                    className="block bg-gradient-to-br from-primary-green to-primary-green/80 rounded-xl p-5 text-white hover:shadow-lg transition-shadow"
+                  >
+                    <div className="bg-white/10 rounded-lg p-4 mb-3 flex items-center justify-center">
+                      <svg viewBox="0 0 100 100" className="w-20 h-20">
+                        <ellipse cx="50" cy="82" rx="32" ry="11" fill="#FFD54F" opacity="0.4" />
+                        <path d="M22 80 Q16 58 24 40 Q34 20 66 20 Q76 38 78 58 Q80 70 78 80 Z" fill="#FFD54F" opacity="0.6" />
+                        <ellipse cx="50" cy="24" rx="20" ry="8" fill="#FFC107" />
+                      </svg>
+                    </div>
+                    <p className="text-xs font-bold uppercase tracking-wider text-primary-gold mb-1">
+                      Bestseller
+                    </p>
+                    <h4 className="font-serif font-bold text-lg mb-1">A2 Bilona Ghee</h4>
+                    <p className="text-xs text-white/80 mb-3">Hand-churned the traditional way</p>
+                    <div className="flex items-baseline gap-2">
+                      <span className="text-xl font-bold">₹649</span>
+                      <span className="text-xs text-white/60 line-through">₹750</span>
+                    </div>
+                    <button className="mt-3 w-full px-3 py-2 bg-white text-primary-green font-bold text-xs rounded-lg hover:bg-gray-100 transition-colors">
+                      Shop Now →
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* ── Mobile search bar ── */}

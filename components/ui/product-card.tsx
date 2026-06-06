@@ -6,6 +6,7 @@ import Link from "next/link";
 import Badge from "./badge";
 import QuickViewModal from "./quick-view-modal";
 import { cn } from "@/lib/utils";
+import { getWellnessTagsForProduct, WELLNESS_TAG_LABELS } from "@/lib/data";
 
 interface ProductCardProps {
   id: string;
@@ -42,6 +43,7 @@ export default function ProductCard({
   const [isSubscription, setIsSubscription] = useState(false);
   const [showQuickView, setShowQuickView] = useState(false);
   const productSlug = generateSlug(title);
+  const wellnessTags = getWellnessTagsForProduct(title).slice(0, 2); // Show only top 2 tags
 
   // Calculate subscription savings (15% discount)
   const priceNum = parseInt(price.replace("₹", ""));
@@ -228,6 +230,27 @@ export default function ProductCard({
       <span className="text-[10px] uppercase font-bold tracking-wider text-primary-muted/70 mb-1">
         {category}
       </span>
+
+      {/* Wellness Tags */}
+      {wellnessTags.length > 0 && (
+        <div className="flex flex-wrap gap-1 mb-1.5">
+          {wellnessTags.map((tag) => {
+            const tagInfo = WELLNESS_TAG_LABELS[tag];
+            if (!tagInfo) return null;
+            return (
+              <span
+                key={tag}
+                className={cn(
+                  "text-[9px] font-semibold px-2 py-0.5 rounded-full",
+                  tagInfo.color
+                )}
+              >
+                {tagInfo.label}
+              </span>
+            );
+          })}
+        </div>
+      )}
 
       {/* Title */}
       <Link href={`/product/${productSlug}`} className="w-full">

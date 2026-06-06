@@ -12,7 +12,19 @@ export interface FilterState {
   inStock: boolean;
   rating: number | null;
   subscriptionOnly?: boolean;
+  wellnessGoals?: string[];
 }
+
+const WELLNESS_FILTER_OPTIONS = [
+  { id: "diabetic", label: "Diabetic Friendly", icon: "🩺" },
+  { id: "weight-loss", label: "Weight Loss", icon: "🍎" },
+  { id: "heart-health", label: "Heart Health", icon: "❤️" },
+  { id: "immunity", label: "Immunity", icon: "🛡️" },
+  { id: "gut-health", label: "Gut Health", icon: "✨" },
+  { id: "kids-nutrition", label: "Kids Nutrition", icon: "👶" },
+  { id: "pregnancy", label: "Pregnancy", icon: "🌸" },
+  { id: "senior-wellness", label: "Senior Wellness", icon: "👴" },
+];
 
 interface FilterSidebarProps {
   filters: FilterState;
@@ -135,6 +147,33 @@ export default function FilterSidebar({
             <p className="text-xs text-gray-600 mt-0.5">Save 15% on every delivery</p>
           </div>
         </label>
+      </div>
+
+      {/* Shop by Wellness Goal */}
+      <div className="border-t border-gray-200 pt-4">
+        <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
+          <span>Shop by Wellness Goal</span>
+        </h3>
+        <div className="space-y-2">
+          {WELLNESS_FILTER_OPTIONS.map((option) => (
+            <label key={option.id} className="flex items-center gap-3 cursor-pointer hover:bg-gray-50 p-2 rounded-lg transition-colors">
+              <input
+                type="checkbox"
+                checked={filters.wellnessGoals?.includes(option.id) || false}
+                onChange={(e) => {
+                  const current = filters.wellnessGoals || [];
+                  const updated = e.target.checked
+                    ? [...current, option.id]
+                    : current.filter((g) => g !== option.id);
+                  onFilterChange({ ...filters, wellnessGoals: updated });
+                }}
+                className="w-4 h-4 accent-primary-green"
+              />
+              <span className="text-base">{option.icon}</span>
+              <span className="text-sm text-gray-700">{option.label}</span>
+            </label>
+          ))}
+        </div>
       </div>
 
       {/* Rating */}

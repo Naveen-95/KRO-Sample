@@ -10,7 +10,50 @@ export interface Product {
     type: "hot" | "discount" | "new";
     text: string;
   };
+  wellnessTags?: string[]; // e.g., ["diabetic", "heart-health", "weight-loss"]
 }
+
+// Helper: get wellness tags for a product based on title/category
+export const getWellnessTagsForProduct = (title: string): string[] => {
+  const t = title.toLowerCase();
+  const tags: string[] = [];
+
+  if (t.includes("ragi") || t.includes("jowar") || t.includes("bajra") || t.includes("millet") || t.includes("foxtail")) {
+    tags.push("diabetic", "weight-loss", "kids-nutrition");
+  }
+  if (t.includes("quinoa") || t.includes("brown rice")) {
+    tags.push("weight-loss", "diabetic");
+  }
+  if (t.includes("oil") && t.includes("cold-pressed")) {
+    tags.push("heart-health");
+  }
+  if (t.includes("turmeric") || t.includes("honey")) {
+    tags.push("immunity");
+  }
+  if (t.includes("ghee")) {
+    tags.push("pregnancy", "kids-nutrition", "senior-wellness");
+  }
+  if (t.includes("dal") || t.includes("moong") || t.includes("toor") || t.includes("chana")) {
+    tags.push("gut-health", "weight-loss");
+  }
+  if (t.includes("cumin") || t.includes("coriander") || t.includes("garam")) {
+    tags.push("gut-health", "immunity");
+  }
+
+  return tags;
+};
+
+// Wellness tag display labels
+export const WELLNESS_TAG_LABELS: Record<string, { label: string; color: string }> = {
+  "diabetic": { label: "Diabetic Friendly", color: "bg-green-100 text-green-800" },
+  "weight-loss": { label: "Weight Loss", color: "bg-orange-100 text-orange-800" },
+  "heart-health": { label: "Heart Health", color: "bg-red-100 text-red-800" },
+  "immunity": { label: "Immunity", color: "bg-amber-100 text-amber-800" },
+  "gut-health": { label: "Gut Health", color: "bg-purple-100 text-purple-800" },
+  "kids-nutrition": { label: "Kids", color: "bg-blue-100 text-blue-800" },
+  "pregnancy": { label: "Pregnancy", color: "bg-pink-100 text-pink-800" },
+  "senior-wellness": { label: "Seniors", color: "bg-stone-100 text-stone-800" },
+};
 
 export interface PopularCategory {
   title: string;

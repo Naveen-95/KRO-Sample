@@ -15,6 +15,7 @@ import {
   GRAINS,
   POPULAR_CATEGORIES,
   Product,
+  getWellnessTagsForProduct,
 } from "@/lib/data";
 
 const ITEMS_PER_PAGE = 12;
@@ -44,14 +45,19 @@ export default function ShopPage() {
   const filteredProducts = useMemo(() => {
     return allProducts.filter((product) => {
       const price = parseInt(product.price.replace("₹", ""));
+      const productWellnessTags = getWellnessTagsForProduct(product.title);
 
       const matchesSearch = product.title.toLowerCase().includes(searchTerm.toLowerCase());
       const matchesCategory =
         filters.categories.length === 0 || filters.categories.includes(product.category);
       const matchesPrice = price >= filters.priceRange[0] && price <= filters.priceRange[1];
       const matchesRating = filters.rating === null || (product.rating || 0) >= filters.rating;
+      const matchesWellness =
+        !filters.wellnessGoals ||
+        filters.wellnessGoals.length === 0 ||
+        filters.wellnessGoals.some((goal) => productWellnessTags.includes(goal));
 
-      return matchesSearch && matchesCategory && matchesPrice && matchesRating;
+      return matchesSearch && matchesCategory && matchesPrice && matchesRating && matchesWellness;
     });
   }, [allProducts, searchTerm, filters]);
 
