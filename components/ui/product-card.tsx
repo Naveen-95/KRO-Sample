@@ -1,9 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import { Heart, Star, ShoppingCart } from "lucide-react";
+import { Heart, Star, ShoppingCart, Eye, ArrowLeftRight } from "lucide-react";
 import Link from "next/link";
 import Badge from "./badge";
+import QuickViewModal from "./quick-view-modal";
 import { cn } from "@/lib/utils";
 
 interface ProductCardProps {
@@ -39,6 +40,7 @@ export default function ProductCard({
 }: ProductCardProps) {
   const [isWishlisted, setIsWishlisted] = useState(false);
   const [isSubscription, setIsSubscription] = useState(false);
+  const [showQuickView, setShowQuickView] = useState(false);
   const productSlug = generateSlug(title);
 
   // Calculate subscription savings (15% discount)
@@ -177,31 +179,48 @@ export default function ProductCard({
   };
 
   return (
-    <Link href={`/product/${productSlug}`}>
-      <div className="group bg-white rounded-2xl border border-gray-100 p-4 flex flex-col items-start relative hover:shadow-hover hover:scale-[1.01] transition-all duration-300 select-none cursor-pointer">
+    <>
+    <div className="group bg-white rounded-2xl border border-gray-100 p-4 flex flex-col items-start relative hover:shadow-hover transition-all duration-300 select-none">
 
-      {/* Badge + Wishlist overlay */}
+      {/* Badge overlay */}
       <div className="absolute top-3.5 left-3.5 flex flex-col gap-1 z-10">
         {badge && <Badge type={badge.type}>{badge.text}</Badge>}
       </div>
 
-      <button
-        onClick={() => setIsWishlisted(!isWishlisted)}
-        className="absolute top-3.5 right-3.5 w-8 h-8 rounded-full bg-white border border-gray-100 flex items-center justify-center text-gray-400 hover:text-red-500 hover:border-red-100 transition-all shadow-sm active:scale-90 cursor-pointer z-10"
-        aria-label="Add to wishlist"
-      >
-        <Heart
-          className={cn(
-            "w-3.5 h-3.5 transition-colors",
-            isWishlisted ? "fill-red-500 text-red-500" : "text-gray-400"
-          )}
-        />
-      </button>
-
-      {/* Product image area */}
-      <div className="w-full aspect-square flex items-center justify-center p-3 mb-4 bg-primary-bg rounded-xl overflow-hidden">
-        <div className="w-[110px] h-[110px] group-hover:scale-105 transition-transform duration-300">
+      {/* Product image area with hover overlay */}
+      <div className="w-full aspect-square flex items-center justify-center p-3 mb-4 bg-primary-bg rounded-xl overflow-hidden relative">
+        <Link href={`/product/${productSlug}`} className="w-[110px] h-[110px] group-hover:scale-105 transition-transform duration-300 cursor-pointer">
           {renderPlaceholder()}
+        </Link>
+
+        {/* Hover action buttons (WoodMart style) */}
+        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              setShowQuickView(true);
+            }}
+            className="w-9 h-9 bg-white shadow-md rounded-full flex items-center justify-center hover:bg-primary-green hover:text-white transition-colors"
+            title="Quick View"
+            aria-label="Quick View"
+          >
+            <Eye className="w-4 h-4" />
+          </button>
+          <button
+            className="w-9 h-9 bg-white shadow-md rounded-full flex items-center justify-center hover:bg-primary-green hover:text-white transition-colors"
+            title="Compare"
+            aria-label="Compare"
+          >
+            <ArrowLeftRight className="w-4 h-4" />
+          </button>
+          <button
+            onClick={() => setIsWishlisted(!isWishlisted)}
+            className="w-9 h-9 bg-white shadow-md rounded-full flex items-center justify-center hover:bg-primary-green hover:text-white transition-colors"
+            title="Wishlist"
+            aria-label="Wishlist"
+          >
+            <Heart className={cn("w-4 h-4", isWishlisted && "fill-red-500 text-red-500")} />
+          </button>
         </div>
       </div>
 
@@ -211,9 +230,11 @@ export default function ProductCard({
       </span>
 
       {/* Title */}
-      <h3 className="text-sm font-semibold text-gray-800 line-clamp-1 mb-1.5 hover:text-primary-green transition-colors cursor-pointer w-full">
-        {title}
-      </h3>
+      <Link href={`/product/${productSlug}`} className="w-full">
+        <h3 className="text-sm font-semibold text-gray-800 line-clamp-1 mb-1.5 hover:text-primary-green transition-colors cursor-pointer w-full">
+          {title}
+        </h3>
+      </Link>
 
       {/* Stars */}
       {rating ? (
@@ -268,6 +289,13 @@ export default function ProductCard({
         </button>
       </div>
     </div>
-    </Link>
+
+    {/* Quick View Modal */}
+    <QuickViewModal
+      isOpen={showQuickView}
+      onClose={() => setShowQuickView(false)}
+      product={{ id, title, category, price, oldPrice, rating }}
+    />
+    </>
   );
 }
