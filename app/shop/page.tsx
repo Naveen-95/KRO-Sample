@@ -24,6 +24,7 @@ export default function ShopPage() {
   const [sortBy, setSortBy] = useState("newest");
   const [searchTerm, setSearchTerm] = useState("");
   const [showMobileFilters, setShowMobileFilters] = useState(false);
+  const [subscriptionOnly, setSubscriptionOnly] = useState(false);
 
   const [filters, setFilters] = useState<FilterState>({
     categories: [],

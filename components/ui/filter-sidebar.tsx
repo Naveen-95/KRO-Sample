@@ -11,6 +11,7 @@ export interface FilterState {
   certifications: string[];
   inStock: boolean;
   rating: number | null;
+  subscriptionOnly?: boolean;
 }
 
 interface FilterSidebarProps {
@@ -117,6 +118,22 @@ export default function FilterSidebar({
             className="w-4 h-4 accent-primary-green"
           />
           <span className="text-sm font-medium text-gray-700">In Stock Only</span>
+        </label>
+      </div>
+
+      {/* Subscribe & Save */}
+      <div className="border-t border-gray-200 pt-4 mt-4">
+        <label className="flex items-center gap-3 cursor-pointer p-3 bg-primary-green/10 rounded-lg">
+          <input
+            type="checkbox"
+            checked={filters.subscriptionOnly || false}
+            onChange={(e) => onFilterChange({ ...filters, subscriptionOnly: e.target.checked })}
+            className="w-4 h-4 accent-primary-green"
+          />
+          <div>
+            <span className="text-sm font-bold text-primary-green">Subscribe & Save</span>
+            <p className="text-xs text-gray-600 mt-0.5">Save 15% on every delivery</p>
+          </div>
         </label>
       </div>
 

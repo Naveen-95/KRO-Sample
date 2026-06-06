@@ -46,6 +46,13 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
   const [quantity, setQuantity] = useState(1);
   const [selectedSize, setSelectedSize] = useState(product.packSizes?.[0] || "1kg");
   const [isWishlisted, setIsWishlisted] = useState(false);
+  const [purchaseType, setPurchaseType] = useState<"oneTime" | "subscription">("oneTime");
+  const [subscriptionFrequency, setSubscriptionFrequency] = useState("monthly");
+
+  // Calculate subscription savings
+  const priceNum = parseInt(product.price.replace("₹", ""));
+  const subscriptionPrice = Math.floor(priceNum * 0.85);
+  const savings = priceNum - subscriptionPrice;
 
   // Get related products (same category)
   const relatedProducts = allProducts.filter((p) => p.category === product.category && p.id !== product.id).slice(0, 6);
@@ -183,10 +190,21 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
             </div>
 
             {/* Price */}
-            <div className="flex items-baseline gap-3 mb-6">
-              <span className="text-3xl font-bold text-primary-green">{product.price}</span>
-              {product.oldPrice && <span className="text-lg text-gray-400 line-through">{product.oldPrice}</span>}
-              <span className="text-sm font-semibold text-red-600 ml-auto">Save ₹40 (18%)</span>
+            <div className="mb-6">
+              <div className="flex items-baseline gap-3 mb-2">
+                <span className="text-3xl font-bold text-primary-green">
+                  {purchaseType === "subscription" ? `₹${subscriptionPrice}` : product.price}
+                </span>
+                {purchaseType === "oneTime" && product.oldPrice && (
+                  <span className="text-lg text-gray-400 line-through">{product.oldPrice}</span>
+                )}
+                {purchaseType === "subscription" && (
+                  <span className="text-lg text-gray-400 line-through">{product.price}</span>
+                )}
+              </div>
+              {purchaseType === "subscription" && (
+                <p className="text-sm text-green-600 font-semibold">Save ₹{savings} every delivery (15% off)</p>
+              )}
             </div>
 
             {/* Short description */}
@@ -211,6 +229,53 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
                 ))}
               </div>
             </div>
+
+            {/* Purchase Type - One Time vs Subscription */}
+            <div className="mb-6">
+              <label className="text-sm font-semibold text-gray-800 mb-3 block">How Often</label>
+              <div className="grid grid-cols-2 gap-3">
+                <button
+                  onClick={() => setPurchaseType("oneTime")}
+                  className={`px-4 py-3 rounded-lg font-medium transition-all border-2 ${
+                    purchaseType === "oneTime"
+                      ? "border-primary-green bg-primary-lightGreen text-primary-green"
+                      : "border-gray-200 text-gray-700 hover:border-gray-300"
+                  }`}
+                >
+                  One-Time
+                </button>
+                <button
+                  onClick={() => setPurchaseType("subscription")}
+                  className={`px-4 py-3 rounded-lg font-medium transition-all border-2 ${
+                    purchaseType === "subscription"
+                      ? "border-primary-green bg-primary-lightGreen text-primary-green"
+                      : "border-gray-200 text-gray-700 hover:border-gray-300"
+                  }`}
+                >
+                  Subscribe & Save 15%
+                </button>
+              </div>
+            </div>
+
+            {/* Subscription Frequency */}
+            {purchaseType === "subscription" && (
+              <div className="mb-6 p-4 bg-primary-green/5 rounded-lg">
+                <label className="text-sm font-semibold text-gray-800 mb-3 block">Delivery Frequency</label>
+                <select
+                  value={subscriptionFrequency}
+                  onChange={(e) => setSubscriptionFrequency(e.target.value)}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-green/20"
+                >
+                  <option value="weekly">Every Week</option>
+                  <option value="biweekly">Every 2 Weeks</option>
+                  <option value="monthly">Every Month</option>
+                  <option value="quarterly">Every 3 Months</option>
+                </select>
+                <p className="text-xs text-gray-600 mt-3">
+                  ✓ Pause or cancel anytime  •  ✓ Free delivery always  •  ✓ 15% discount every order
+                </p>
+              </div>
+            )}
 
             {/* Quantity */}
             <div className="mb-6">

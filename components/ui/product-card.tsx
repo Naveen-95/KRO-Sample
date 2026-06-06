@@ -38,7 +38,13 @@ export default function ProductCard({
   badge,
 }: ProductCardProps) {
   const [isWishlisted, setIsWishlisted] = useState(false);
+  const [isSubscription, setIsSubscription] = useState(false);
   const productSlug = generateSlug(title);
+
+  // Calculate subscription savings (15% discount)
+  const priceNum = parseInt(price.replace("₹", ""));
+  const subscriptionPrice = Math.floor(priceNum * 0.85);
+  const savings = priceNum - subscriptionPrice;
 
   const renderPlaceholder = () => {
     const t = title.toLowerCase();
@@ -219,12 +225,42 @@ export default function ProductCard({
         <div className="h-5 mb-3" />
       )}
 
+      {/* Subscription Toggle */}
+      <div className="w-full mt-3 border-t border-gray-50 pt-3">
+        <button
+          onClick={() => setIsSubscription(!isSubscription)}
+          className={`w-full px-3 py-2 rounded-lg text-xs font-semibold transition-all flex items-center justify-center gap-2 ${
+            isSubscription
+              ? "bg-primary-green text-white"
+              : "bg-primary-lightGreen text-primary-green hover:bg-primary-green/20"
+          }`}
+        >
+          <input
+            type="checkbox"
+            checked={isSubscription}
+            onChange={() => setIsSubscription(!isSubscription)}
+            className="w-4 h-4 cursor-pointer"
+          />
+          Subscribe & Save 15%
+        </button>
+      </div>
+
       {/* Price + Add to cart */}
-      <div className="w-full flex items-center justify-between gap-2 mt-auto border-t border-gray-50 pt-3">
-        <div className="flex items-baseline gap-1.5">
-          <span className="text-base font-bold text-primary-green">{price}</span>
-          {oldPrice && (
-            <span className="text-xs text-gray-400 line-through font-medium">{oldPrice}</span>
+      <div className="w-full flex items-center justify-between gap-2 mt-2">
+        <div className="flex flex-col gap-0.5">
+          {isSubscription ? (
+            <>
+              <span className="text-xs text-gray-500 line-through">{price}</span>
+              <span className="text-base font-bold text-primary-green">₹{subscriptionPrice}</span>
+              <span className="text-xs text-green-600 font-semibold">Save ₹{savings}/month</span>
+            </>
+          ) : (
+            <>
+              <span className="text-base font-bold text-primary-green">{price}</span>
+              {oldPrice && (
+                <span className="text-xs text-gray-400 line-through font-medium">{oldPrice}</span>
+              )}
+            </>
           )}
         </div>
         <button className="w-8 h-8 bg-primary-lightGreen hover:bg-primary-green rounded-full flex items-center justify-center text-primary-green hover:text-white transition-all cursor-pointer group/cart" aria-label="Add to cart">
