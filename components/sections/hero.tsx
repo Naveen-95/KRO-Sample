@@ -1,21 +1,74 @@
 "use client";
 
 import React, { useState } from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Play, Volume2, VolumeX } from "lucide-react";
 
 export default function Hero() {
   const [activeSlide, setActiveSlide] = useState(0);
+  const [videoMuted, setVideoMuted] = useState(true);
 
   return (
     <section className="w-full grid grid-cols-1 lg:grid-cols-12 gap-5 mb-8 select-none">
 
-      {/* ── Main Hero Slide ── */}
+      {/* ── Main Hero Slide with Video Background ── */}
       <div
         className="lg:col-span-6 rounded-2xl p-8 md:p-12 flex flex-col justify-center min-h-[400px] relative overflow-hidden group shadow-sm"
         style={{
           background: "linear-gradient(135deg, #1E3D28 0%, #2E5E3A 45%, #3F7A4E 80%, #4A9660 100%)",
         }}
       >
+        {/* Video Background Placeholder (WoodMart's Slider Revolution / Video Module mock) */}
+        <div className="absolute inset-0 z-0">
+          {/* Animated wheat field simulating video playback */}
+          <svg viewBox="0 0 800 400" className="absolute bottom-0 w-full h-full" preserveAspectRatio="xMidYMax slice">
+            <defs>
+              <linearGradient id="wheat-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stopColor="#B08A3E" stopOpacity="0.2" />
+                <stop offset="100%" stopColor="#B08A3E" stopOpacity="0.6" />
+              </linearGradient>
+            </defs>
+            <g opacity="0.25">
+              {Array.from({ length: 30 }).map((_, i) => (
+                <line
+                  key={i}
+                  x1={i * 28 + 10}
+                  y1="400"
+                  x2={i * 28 + 10 + (i % 2 === 0 ? 5 : -5)}
+                  y2={280 + (i % 3) * 15}
+                  stroke="url(#wheat-gradient)"
+                  strokeWidth="2.5"
+                  className="origin-bottom"
+                  style={{
+                    animation: `sway ${2 + (i % 3)}s ease-in-out infinite`,
+                    animationDelay: `${i * 0.08}s`,
+                    transformOrigin: "bottom",
+                  }}
+                />
+              ))}
+            </g>
+          </svg>
+        </div>
+
+        {/* Video badge (LIVE FROM FARM) - top-left */}
+        <div className="absolute top-4 left-4 z-20 flex items-center gap-1.5 bg-red-600/90 backdrop-blur-sm rounded-full px-3 py-1 shadow-lg">
+          <div className="w-2 h-2 bg-white rounded-full animate-pulse" />
+          <span className="text-[10px] font-bold text-white uppercase tracking-widest">
+            LIVE FROM FARM
+          </span>
+        </div>
+
+        {/* Video controls - top-right */}
+        <div className="absolute top-4 right-4 z-20 flex gap-2">
+          <button
+            onClick={() => setVideoMuted(!videoMuted)}
+            className="w-8 h-8 rounded-full bg-white/15 backdrop-blur-sm hover:bg-white/25 transition-colors flex items-center justify-center text-white"
+            title={videoMuted ? "Unmute video" : "Mute video"}
+            aria-label={videoMuted ? "Unmute video" : "Mute video"}
+          >
+            {videoMuted ? <VolumeX className="w-3.5 h-3.5" /> : <Volume2 className="w-3.5 h-3.5" />}
+          </button>
+        </div>
+
         {/* Subtle grain texture overlay */}
         <div
           className="absolute inset-0 opacity-[0.04]"

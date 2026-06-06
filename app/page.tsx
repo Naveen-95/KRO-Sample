@@ -4,6 +4,9 @@ import React from "react";
 import Hero from "@/components/sections/hero";
 import InfoBar from "@/components/sections/info-bar";
 import WellnessCategories from "@/components/sections/wellness-categories";
+import TrendingTicker from "@/components/sections/trending-ticker";
+import WellnessQuizCTA from "@/components/sections/wellness-quiz-cta";
+import InstagramFeed from "@/components/sections/instagram-feed";
 import PopularCategories from "@/components/sections/popular-categories";
 import CategoryShelf from "@/components/sections/category-shelf";
 import MiddleBanners from "@/components/sections/middle-banners";
@@ -60,11 +63,17 @@ export default function Home() {
         products={BESTSELLERS}
       />
 
+      {/* 4.5. Trending Now Ticker with Stock Urgency */}
+      <TrendingTicker />
+
       {/* 5. Packaging & freshness reassurance (3-col) */}
       <MiddleBanners />
 
       {/* 6. Brand story strip (2-col) */}
       <Editorial />
+
+      {/* 6.5. Wellness Quiz CTA Banner */}
+      <WellnessQuizCTA />
 
       {/* 7. Oils spotlight banner + shelf */}
       <div className="w-full mb-5 rounded-2xl bg-[#E9F4FB] overflow-hidden p-7 flex flex-col sm:flex-row items-center justify-between gap-5 select-none">
@@ -229,6 +238,9 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* 13.5. Instagram Shoppable Feed */}
+      <InstagramFeed />
 
       {/* 14. Certifications strip */}
       <section className="w-full mb-12 bg-primary-lightYellow rounded-2xl p-7 md:p-10 select-none">
